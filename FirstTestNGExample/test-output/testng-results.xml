@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26287" started-at="2019-02-27T11:23:16Z" finished-at="2019-02-27T11:23:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26287" started-at="2019-02-27T11:23:16Z" finished-at="2019-02-27T11:23:43Z">
+      <class name="NewTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:NewTest@ae45eb6]" name="beforeTest" is-config="true" duration-ms="14611" started-at="2019-02-27T11:23:16Z" finished-at="2019-02-27T11:23:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="VerifyBackground()[pri:0, instance:NewTest@ae45eb6]" name="VerifyBackground" duration-ms="88" started-at="2019-02-27T11:23:31Z" finished-at="2019-02-27T11:23:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyBackground -->
+        <test-method status="PASS" signature="VerifyDocumentExpand()[pri:0, instance:NewTest@ae45eb6]" name="VerifyDocumentExpand" duration-ms="265" started-at="2019-02-27T11:23:31Z" finished-at="2019-02-27T11:23:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDocumentExpand -->
+        <test-method status="PASS" signature="VerifyDocumentImage()[pri:0, instance:NewTest@ae45eb6]" name="VerifyDocumentImage" duration-ms="1253" started-at="2019-02-27T11:23:31Z" finished-at="2019-02-27T11:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDocumentImage -->
+        <test-method status="PASS" signature="VerifyImage()[pri:0, instance:NewTest@ae45eb6]" name="VerifyImage" duration-ms="724" started-at="2019-02-27T11:23:33Z" finished-at="2019-02-27T11:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyImage -->
+        <test-method status="PASS" signature="VerifyLink()[pri:0, instance:NewTest@ae45eb6]" name="VerifyLink" duration-ms="72" started-at="2019-02-27T11:23:33Z" finished-at="2019-02-27T11:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLink -->
+        <test-method status="PASS" signature="VerifyPlayPause()[pri:0, instance:NewTest@ae45eb6]" name="VerifyPlayPause" duration-ms="100" started-at="2019-02-27T11:23:33Z" finished-at="2019-02-27T11:23:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPlayPause -->
+        <test-method status="PASS" signature="VerifySearchBar()[pri:0, instance:NewTest@ae45eb6]" name="VerifySearchBar" duration-ms="56" started-at="2019-02-27T11:23:34Z" finished-at="2019-02-27T11:23:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchBar -->
+        <test-method status="PASS" signature="VerifyTabs()[pri:0, instance:NewTest@ae45eb6]" name="VerifyTabs" duration-ms="8869" started-at="2019-02-27T11:23:34Z" finished-at="2019-02-27T11:23:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTabs -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:NewTest@ae45eb6]" name="afterTest" is-config="true" duration-ms="161" started-at="2019-02-27T11:23:42Z" finished-at="2019-02-27T11:23:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
