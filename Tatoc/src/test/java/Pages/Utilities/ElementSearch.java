@@ -5,38 +5,37 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class ELementSearch {
+public class ElementSearch {
 	
 	WebDriver driver;
 	static String fileName;
 	static ArrayList<String> line = new ArrayList<String>();
 	static String Selector;
-	public ELementSearch(WebDriver driver, String file) {
+	public ElementSearch(WebDriver driver, String file) {
 		
 		this.driver = driver;
-		ELementSearch.fileName = file;
+		ElementSearch.fileName = "resource/SpecFiles/"+file+".spec";
 
 	}
 	
-	public ELementSearch() {
+	public ElementSearch() {
 		
 	}
 
 	public void file() throws IOException {
 		
-		File file = new File(ELementSearch.fileName);
+		File file = new File(ElementSearch.fileName);
 		FileReader fr = new FileReader(file);
 		BufferedReader br = new BufferedReader(fr);
 		String readline;
 		
 		while ((readline = br.readLine()) != null)   {
 			 
-			ELementSearch.line.add(readline);
+			ElementSearch.line.add(readline);
 			
 		}
 		
@@ -45,12 +44,12 @@ public class ELementSearch {
 	
 	public String findPath(String name) {
 		
-		for(int i = 0; i < ELementSearch.line.size(); i++) {
+		for(int i = 0; i < ElementSearch.line.size(); i++) {
 			
-			if(ELementSearch.line.get(i).contains(name)) {
+			if(ElementSearch.line.get(i).contains(name)) {
 				
-				String[] ar = ELementSearch.line.get(i).split("\\s+",3);
-				ELementSearch.Selector = ar[1];
+				String[] ar = ElementSearch.line.get(i).split("\\s+",3);
+				ElementSearch.Selector = ar[1];
 				String path = ar[2];
 				return path;
 			}
@@ -63,23 +62,23 @@ public class ELementSearch {
 	public WebElement findElement(String name) throws IOException {
 		 
 		 
-	    	ELementSearch es = new ELementSearch();
+	    	ElementSearch es = new ElementSearch();
 	    	es.file();
 		    String path = es.findPath(name);
 	    	WebElement web = null;
-	    	if(ELementSearch.Selector.contains("xpath")) {
+	    	if(ElementSearch.Selector.contains("xpath")) {
 	    		
 	    		web = driver.findElement(By.xpath(path));
 	    		return web;
 	    		
 	    	}
-	    	if(ELementSearch.Selector.contains("id")) {
+	    	if(ElementSearch.Selector.contains("id")) {
 	    		
 	    		web = driver.findElement(By.id(path));
 	    		return web;
 	    		
 	    	}
-	    	if(ELementSearch.Selector.contains("className")) {
+	    	if(ElementSearch.Selector.contains("className")) {
 	    		
 	    		web = driver.findElement(By.className(path));
 	    		return web;

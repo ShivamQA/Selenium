@@ -1,7 +1,7 @@
 package Pages;
 
 import java.io.IOException;
-import Pages.Utilities.ELementSearch;
+import Pages.Utilities.ElementSearch;
 
 
 import org.openqa.selenium.Cookie;
@@ -18,9 +18,9 @@ public class CookieHandlingPage {
 		this.driver = driver;
 
 	}
-	ELementSearch es;
+	ElementSearch es;
 	public void CookieGenerateErrorTest() throws IOException {
-		es = new ELementSearch(driver,"resource/Spec Files/CookieHandlingElements.spec");
+		es = new ElementSearch(driver,"CookieHandlingElements");
 		es.findElement("Generate_Token").click();
 		es.findElement("Proceed").click();
 		Assert.assertEquals(driver.getTitle(), "Error - T.A.T.O.C","Assertion Failed: Page Title: Error - T.A.T.O.C not found");

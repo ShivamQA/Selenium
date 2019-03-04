@@ -59,16 +59,16 @@
       <![CDATA[Assertion Passed: Page gets redirects to next page after setting cookie and clicks on Proceed]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6682" started-at="2019-03-04T11:37:09Z" finished-at="2019-03-04T11:37:16Z">
+  <suite name="Default suite" duration-ms="7911" started-at="2019-03-04T12:30:28Z" finished-at="2019-03-04T12:30:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6682" started-at="2019-03-04T11:37:09Z" finished-at="2019-03-04T11:37:16Z">
+    <test name="Default test" duration-ms="7911" started-at="2019-03-04T12:30:28Z" finished-at="2019-03-04T12:30:36Z">
       <class name="Test.TestTatoc">
-        <test-method status="PASS" signature="setup()[pri:0, instance:Test.TestTatoc@16a0ee18]" name="setup" is-config="true" duration-ms="1519" started-at="2019-03-04T11:37:09Z" finished-at="2019-03-04T11:37:11Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test.TestTatoc@505fc5a4]" name="setup" is-config="true" duration-ms="2353" started-at="2019-03-04T12:30:28Z" finished-at="2019-03-04T12:30:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Grid()[pri:0, instance:Test.TestTatoc@16a0ee18]" name="Grid" duration-ms="451" started-at="2019-03-04T11:37:11Z" finished-at="2019-03-04T11:37:11Z">
+        <test-method status="PASS" signature="Grid()[pri:0, instance:Test.TestTatoc@505fc5a4]" name="Grid" duration-ms="477" started-at="2019-03-04T12:30:31Z" finished-at="2019-03-04T12:30:31Z">
           <reporter-output>
             <line>
               <![CDATA[Assertion Passed: Page redirects to error page after clicking Red Box]]>
@@ -78,7 +78,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Grid -->
-        <test-method status="PASS" signature="Frame()[pri:1, instance:Test.TestTatoc@16a0ee18]" name="Frame" duration-ms="1726" started-at="2019-03-04T11:37:11Z" finished-at="2019-03-04T11:37:13Z">
+        <test-method status="PASS" signature="Frame()[pri:1, instance:Test.TestTatoc@505fc5a4]" name="Frame" duration-ms="1983" started-at="2019-03-04T12:30:31Z" finished-at="2019-03-04T12:30:33Z">
           <reporter-output>
             <line>
               <![CDATA[Assertion Passed: Box 1 is diplayed on the screen]]>
@@ -94,7 +94,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Frame -->
-        <test-method status="PASS" signature="DragDrop()[pri:3, instance:Test.TestTatoc@16a0ee18]" name="DragDrop" duration-ms="612" started-at="2019-03-04T11:37:13Z" finished-at="2019-03-04T11:37:14Z">
+        <test-method status="PASS" signature="DragDrop()[pri:3, instance:Test.TestTatoc@505fc5a4]" name="DragDrop" duration-ms="624" started-at="2019-03-04T12:30:33Z" finished-at="2019-03-04T12:30:34Z">
           <reporter-output>
             <line>
               <![CDATA[Assertion Passed: Drag Me link is diplayed]]>
@@ -107,7 +107,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- DragDrop -->
-        <test-method status="PASS" signature="WindowPopup()[pri:4, instance:Test.TestTatoc@16a0ee18]" name="WindowPopup" duration-ms="1418" started-at="2019-03-04T11:37:14Z" finished-at="2019-03-04T11:37:15Z">
+        <test-method status="PASS" signature="WindowPopup()[pri:4, instance:Test.TestTatoc@505fc5a4]" name="WindowPopup" duration-ms="1501" started-at="2019-03-04T12:30:34Z" finished-at="2019-03-04T12:30:35Z">
           <reporter-output>
             <line>
               <![CDATA[Assertion Passed: Launch Popup Window link is displayed]]>
@@ -132,7 +132,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- WindowPopup -->
-        <test-method status="PASS" signature="CookieHandling()[pri:5, instance:Test.TestTatoc@16a0ee18]" name="CookieHandling" duration-ms="765" started-at="2019-03-04T11:37:15Z" finished-at="2019-03-04T11:37:16Z">
+        <test-method status="PASS" signature="CookieHandling()[pri:5, instance:Test.TestTatoc@505fc5a4]" name="CookieHandling" duration-ms="783" started-at="2019-03-04T12:30:35Z" finished-at="2019-03-04T12:30:36Z">
           <reporter-output>
             <line>
               <![CDATA[Assertion Passed: Page get redirects to Error Page without setting the cookie and clicks Proceed link]]>
@@ -145,7 +145,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- CookieHandling -->
-        <test-method status="PASS" signature="closeSetup()[pri:0, instance:Test.TestTatoc@16a0ee18]" name="closeSetup" is-config="true" duration-ms="157" started-at="2019-03-04T11:37:16Z" finished-at="2019-03-04T11:37:16Z">
+        <test-method status="PASS" signature="closeSetup()[pri:0, instance:Test.TestTatoc@505fc5a4]" name="closeSetup" is-config="true" duration-ms="162" started-at="2019-03-04T12:30:36Z" finished-at="2019-03-04T12:30:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSetup -->

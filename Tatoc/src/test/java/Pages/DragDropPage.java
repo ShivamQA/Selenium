@@ -1,7 +1,7 @@
 package Pages;
 
 import java.io.IOException;
-import Pages.Utilities.ELementSearch;
+import Pages.Utilities.ElementSearch;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -17,10 +17,10 @@ public class DragDropPage {
 		this.driver = driver;
 
 	}
-	ELementSearch es;
+	ElementSearch es;
 	public void DragButton() throws IOException {
 		
-		es = new ELementSearch(driver,"resource/Spec Files/DragDropElements.spec");
+		es = new ElementSearch(driver,"DragDropElements");
 		Boolean check = true;
 		Boolean button = es.findElement("Drag_Me").isEnabled();
 		Assert.assertEquals(button, check, "Assertion Failed: Drag Me link is not found");

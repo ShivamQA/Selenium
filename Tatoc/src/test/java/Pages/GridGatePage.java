@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 
-import Pages.Utilities.ELementSearch;
+import Pages.Utilities.ElementSearch;
 public class GridGatePage {
 	
 	WebDriver driver;
@@ -16,10 +16,10 @@ public class GridGatePage {
 
 	}
 	
-	ELementSearch es;
+	ElementSearch es;
 	
 	public void GridErrorTest() throws IOException {
-		es = new ELementSearch(driver,"resource/Spec Files/GridGateElements.spec");
+		es = new ElementSearch(driver,"GridGateElements");
 		es.findElement("RedBox").click();
 		String errorPage = driver.getTitle();
         Assert.assertEquals(errorPage, "Error - T.A.T.O.C","Assertion Failed: Page title: Error - T.A.T.O.C not found");

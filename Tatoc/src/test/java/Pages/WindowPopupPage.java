@@ -7,8 +7,7 @@ import java.util.ArrayList;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
-
-import Pages.Utilities.ELementSearch;
+import Pages.Utilities.ElementSearch;
 
 public class WindowPopupPage {
 	
@@ -20,11 +19,11 @@ public class WindowPopupPage {
 		this.driver = driver;
 
 	}
-	ELementSearch es;
+	ElementSearch es;
 	
 	public void WindowLinks() throws IOException {
 		
-		es = new ELementSearch(driver,"resource/Spec Files/WindowPopupElements.spec");
+		es = new ElementSearch(driver,"WindowPopupElements");
 		String launchLink = es.findElement("Launch_Popup_Window").getAttribute("href");
 		huc = (HttpURLConnection)(new URL(launchLink).openConnection());
 	    huc.connect();

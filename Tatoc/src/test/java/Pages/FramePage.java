@@ -1,7 +1,7 @@
 package Pages;
 
 import java.io.IOException;
-import Pages.Utilities.ELementSearch;
+import Pages.Utilities.ElementSearch;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -16,10 +16,10 @@ public class FramePage {
 		this.driver = driver;
 
 	}
-	ELementSearch es;
+	ElementSearch es;
 	public void BoxCheck() throws IOException {
 		
-		es = new ELementSearch(driver,"resource/Spec Files/FrameElements.spec");
+		es = new ElementSearch(driver,"FrameElements");
 		Boolean check = true;
 		driver.switchTo().frame("main");
 		Boolean box1 = es.findElement("Box1").isEnabled();
