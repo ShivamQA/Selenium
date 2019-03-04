@@ -7,7 +7,6 @@
         <methods>
           <include name="closeSetup"/>
           <include name="setup"/>
-          <include name="DragDrop"/>
           <include name="WindowPopup"/>
           <include name="CookieHandling"/>
         </methods>

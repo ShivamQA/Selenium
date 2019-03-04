@@ -1,22 +1,13 @@
 package Test;
 import java.io.IOException;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import Pages.*;
 
 public class TestTatoc extends TatocPages{
 	
 	
 	//First Page Test Case
 	@Test(priority = 0)
-	public void Grid() {
+	public void Grid() throws IOException {
 		
 		grid.GridErrorTest();  //When Red color box is clicked
 		grid.GridPassTest();   //When Green color box is clicked	
@@ -24,7 +15,7 @@ public class TestTatoc extends TatocPages{
 	}
 	
 	@Test(priority = 1) 
-	public void Frame() {
+	public void Frame() throws IOException {
 		
 		
 		frame.BoxCheck();          //verify box 1 and box 2 are displayed
@@ -34,7 +25,7 @@ public class TestTatoc extends TatocPages{
 	}
 	
 	@Test(priority = 3)
-	public void DragDrop() {
+	public void DragDrop() throws IOException {
 		
 		
 		drag.DragButton();
@@ -56,8 +47,7 @@ public class TestTatoc extends TatocPages{
 	}
 	
 	@Test(priority = 5)
-	public void CookieHandling() {
-		
+	public void CookieHandling() throws IOException {
 		
 		cookie.CookieGenerateErrorTest();
 		cookie.CookieErrorTest();

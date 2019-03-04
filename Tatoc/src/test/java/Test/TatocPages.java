@@ -3,39 +3,39 @@ package Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 
-import Pages.CookieHandlingTest;
-import Pages.DragDropTest;
-import Pages.FrameTest;
-import Pages.GridGateTest;
-import Pages.WindowPopupTest;
+
+import Pages.CookieHandlingPage;
+import Pages.DragDropPage;
+
+import Pages.FramePage;
+import Pages.GridGatePage;
+import Pages.WindowPopupPage;
 
 public class TatocPages {
 	
 	WebDriver driver;
-	GridGateTest grid;
-	FrameTest frame;
-	DragDropTest drag;
-	WindowPopupTest window;
-	CookieHandlingTest cookie;
+	GridGatePage grid;
+	FramePage frame;
+	DragDropPage drag;
+	WindowPopupPage window;
+	CookieHandlingPage cookie;
 
 	public TatocPages() {
 		
-		System.setProperty("webdriver.chrome.driver", "resource/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "resource/Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		
 	}
 	
 	public void init() {
 		
-		grid = new GridGateTest(driver);
-		frame = new FrameTest(driver);
-		drag = new DragDropTest(driver);
-		window = new WindowPopupTest(driver);
-		cookie = new CookieHandlingTest(driver);
+		grid = new GridGatePage(driver);
+		frame = new FramePage(driver);
+		drag = new DragDropPage(driver);
+		window = new WindowPopupPage(driver);
+		cookie = new CookieHandlingPage(driver);
 		
 	}
 	
