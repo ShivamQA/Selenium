@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.TestTatoc">
+      <class name="JavaScript.Test.TestTatoc">
         <methods>
-          <include name="closeSetup"/>
-          <include name="setup"/>
-          <include name="WindowPopup"/>
           <include name="CookieHandling"/>
+          <include name="setup"/>
+          <include name="closeSetup"/>
         </methods>
-      </class> <!-- Test.TestTatoc -->
+      </class> <!-- JavaScript.Test.TestTatoc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
